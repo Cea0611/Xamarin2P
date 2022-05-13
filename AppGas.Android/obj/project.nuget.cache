@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CR3XpnfpcIg9ZyfTQCOY/5d6Qp4Gt2PvpexyzYTu1YDq/AX3nOOApBwxpC8uHiSB3rH1oy2xlSaQS4bunSayRA==",
+  "dgSpecHash": "rDkh4ggepMB898nKw9OQi6rbO64bssMRkRqN6NaNAblD84Cv1ozAFlyrYNepcyTnBSO5bOKevaL0tBRe8RDG1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cesar\\Documents\\Uni\\4to semestre\\windows\\AppGas\\AppGas.Android\\AppGas.Android.csproj",
+  "projectFilePath": "C:\\Users\\Cesar\\Documents\\Uni\\4to semestre\\windows\\Xamarin2P-Fercho\\AppGas.Android\\AppGas.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cesar\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\Cesar\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",

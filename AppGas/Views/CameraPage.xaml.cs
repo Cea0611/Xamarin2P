@@ -17,7 +17,7 @@ namespace AppGas.Views
         {
             InitializeComponent();
 
-            BindingContext = new TasksDetailViewModel();
+            BindingContext = new GasDetailViewModel();
         }
     }
 }

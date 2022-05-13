@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:AppGas.Converters"
+             x:Class="AppGas.Views.TasksDetailPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageConverter x:Key="ImageConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <!-- Toolbar -->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Guardar" Command="{Binding SaveCommand}" />
+        <ToolbarItem Text="Eliminar" Command="{Binding DeleteCommand}" />
+        <ToolbarItem Text="Cancelar" Command="{Binding CancelCommand}" />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+
+
+        <ScrollView>
+            <StackLayout
+                Margin="20"
+                VerticalOptions="StartAndExpand">
+                <Label
+                    Text="Nombre de la sucursal"/>
+                <Entry
+                    Text="{Binding TaskSelected.Name}"/>
+                <Label
+                    Text="Nombre de la compañía"/>
+                <Entry
+                    Text="{Binding TaskSelected.Company}"/>
+                <Label
+                    Text="Precio Gas Roja"/>
+                <Entry
+                    Text="{Binding TaskSelected.pRoja}"/>
+                <Label
+                    Text="Precio Gas Verde"/>
+                <Entry
+                    Text="{Binding TaskSelected.pVerde}"/>
+                <Label
+                    Text="Precio Diesel"/>
+                <Entry
+                    Text="{Binding TaskSelected.pDiesel}"/>
+                <Label
+                    Text="Latitud"/>
+                <Entry
+                    Text="{Binding TaskSelected.Latitude}"/>
+                <Label
+                    Text="Longitud"/>
+                <Entry
+                    Text="{Binding TaskSelected.Longitude}"/>
+                
+                
+                <Button
+                    Text="Tomar Foto"
+                    Command="{Binding TakePictureCommand}" />
+                <Button
+                    Text="Seleccionar Foto"
+                    Command="{Binding SelectPictureCommand}" />
+                <Image
+                    Source="{Binding Picture, Converter={StaticResource ImageConverter}}"
+                    WidthRequest="100" />
+
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

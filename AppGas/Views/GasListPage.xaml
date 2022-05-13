@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:AppGas.Converters"
+             x:Class="AppGas.Views.TaskListPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageConverter x:Key="ImageConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Text="*"
+            Command="{Binding NewCommand}">
+            <ToolbarItem.IconImageSource>
+                <OnPlatform
+                    x:TypeArguments="ImageSource">
+                    <On
+                        Platform="Android, UWP"
+                        Value="plus.png"/>
+                </OnPlatform>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <CollectionView
+                x:Name="GasList"
+                ItemsSource="{Binding Tasks}"
+                SelectionMode="Single"
+                SelectedItem="{Binding TaskSelected}"
+                SelectionChangedCommand="{Binding SelectedCommand}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image
+                                Grid.RowSpan="2"
+                                HeightRequest="50"
+                                Source="{Binding ImageBase64, Converter={StaticResource ImageConverter}}" />
+                        <Label
+                                Grid.Column="2"
+                                Grid.Row="1"
+                                FontAttributes="Bold"
+                                Text="{Binding Name}" />
+                        <Label
+                                Grid.Column="2"
+                                Grid.Row="2"
+                                Text="{Binding Company}" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </ContentPage.Content>
+</ContentPage>

@@ -3463,11 +3463,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cesar\\Documents\\Uni\\4to semestre\\windows\\AppGas\\AppGas.Android\\AppGas.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Cesar\\Documents\\Uni\\4to semestre\\windows\\Xamarin2P-Fercho\\AppGas.Android\\AppGas.Android.csproj",
       "projectName": "AppGas.Android",
-      "projectPath": "C:\\Users\\Cesar\\Documents\\Uni\\4to semestre\\windows\\AppGas\\AppGas.Android\\AppGas.Android.csproj",
+      "projectPath": "C:\\Users\\Cesar\\Documents\\Uni\\4to semestre\\windows\\Xamarin2P-Fercho\\AppGas.Android\\AppGas.Android.csproj",
       "packagesPath": "C:\\Users\\Cesar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cesar\\Documents\\Uni\\4to semestre\\windows\\AppGas\\AppGas.Android\\obj\\",
+      "outputPath": "C:\\Users\\Cesar\\Documents\\Uni\\4to semestre\\windows\\Xamarin2P-Fercho\\AppGas.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3488,8 +3488,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "C:\\Users\\Cesar\\Documents\\Uni\\4to semestre\\windows\\AppGas\\AppGas\\AppGas.csproj": {
-              "projectPath": "C:\\Users\\Cesar\\Documents\\Uni\\4to semestre\\windows\\AppGas\\AppGas\\AppGas.csproj"
+            "C:\\Users\\Cesar\\Documents\\Uni\\4to semestre\\windows\\Xamarin2P-Fercho\\AppGas\\AppGas.csproj": {
+              "projectPath": "C:\\Users\\Cesar\\Documents\\Uni\\4to semestre\\windows\\Xamarin2P-Fercho\\AppGas\\AppGas.csproj"
             }
           }
         }
