@@ -10,16 +10,15 @@ namespace AppGas.Services
 {
     public class ImageService
     {
-        const int DownloadImageSeconds = 15;
+        const int DownloadImageTimeoutSeconds = 15;
 
         readonly HttpClient _HttpClient = new HttpClient
         {
-            Timeout = TimeSpan.FromSeconds(DownloadImageSeconds)
+            Timeout = TimeSpan.FromSeconds(DownloadImageTimeoutSeconds)
         };
 
-        //funcion para descargar una imagen desde un url
-
-        async Task<byte[]> DownloadImageAzync(string imageUrl)
+        // Función para descargar una imagen desde su url
+        async Task<byte[]> DownloadImageAsync(string imageUrl)
         {
             try
             {
@@ -36,31 +35,30 @@ namespace AppGas.Services
             {
                 return null;
             }
-
         }
 
-        // funcion para descargar una imagen y regresarla en formato base 64
+        // Función para descargar una imagen y regresarla en formato base 64
         public async Task<string> DownloadImageAsBase64Async(string imageUrl)
         {
-            byte[] imageBytes = await DownloadImageAzync(imageUrl);
-            return System.Convert.ToBase64String(imageBytes);
+            byte[] imageByteArray = await DownloadImageAsync(imageUrl);
+            return System.Convert.ToBase64String(imageByteArray);
         }
 
-        // funcion para convertir una imagen de base 64 a image source
+        // Función para convertir una imagen de base 64 a ImageSource
         public ImageSource ConvertImageFromBase64ToImageSource(string imageBase64)
         {
-            if (string.IsNullOrEmpty(imageBase64))
+            if (!string.IsNullOrEmpty(imageBase64))
             {
-                return ImageSource.FromStream(() => new MemoryStream(System.Convert.FromBase64String(imageBase64)));
+                return ImageSource.FromStream(() =>
+                    new MemoryStream(System.Convert.FromBase64String(imageBase64))
+                );
             }
             return null;
         }
 
-        //funcion para convertir una imagen desde su ruta al formato basee 64
-
-        public async Task<string> ConvertImageToBase64(string filePath)
+        // Función para convertir una imagen desde su ruta al formato base 64
+        public async Task<string> ConvertImageFileToBase64(string filePath)
         {
-
             if (!string.IsNullOrEmpty(filePath))
             {
                 FileStream stream = File.Open(filePath, FileMode.Open);
@@ -72,4 +70,3 @@ namespace AppGas.Services
         }
     }
 }
-
