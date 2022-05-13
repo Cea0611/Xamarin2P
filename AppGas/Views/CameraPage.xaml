@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGas.Views.CameraPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Camara"
+               HorizontalOptions="CenterAndExpand" />
+            <Image
+                Source="{Binding TaskSelected.Picture, Converter= {StaticResource ImageConverter}}"/>
+            <Button
+                Text="Tomar foto"
+                Command="{Binding TakePictureCommand}"/>
+            <Button
+                Text="Seleccionar foto"
+                Command="{Binding SelectPictureCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

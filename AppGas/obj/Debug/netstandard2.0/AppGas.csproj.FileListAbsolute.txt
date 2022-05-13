@@ -1,0 +1,17 @@
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\bin\Debug\netstandard2.0\AppGas.deps.json
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\bin\Debug\netstandard2.0\AppGas.dll
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\bin\Debug\netstandard2.0\AppGas.pdb
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.csproj.AssemblyReference.cache
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\obj\Debug\netstandard2.0\Views\CameraPage.xaml.g.cs
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\obj\Debug\netstandard2.0\Views\TaskListPage.xaml.g.cs
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\obj\Debug\netstandard2.0\Views\TasksDetailPage.xaml.g.cs
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.AssemblyInfoInputs.cache
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.AssemblyInfo.cs
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.csproj.CoreCompileInputs.cache
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.dll
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\obj\Debug\netstandard2.0\refint\AppGas.dll
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.pdb
+C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas\obj\Debug\netstandard2.0\ref\AppGas.dll
