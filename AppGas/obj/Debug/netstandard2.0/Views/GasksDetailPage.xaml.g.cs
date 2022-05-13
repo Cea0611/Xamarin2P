@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppGas.Views.CameraPage.xaml", "Views/CameraPage.xaml", typeof(global::AppGas.Views.CameraPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppGas.Views.GasksDetailPage.xaml", "Views/GasksDetailPage.xaml", typeof(global::AppGas.Views.TasksDetailPage))]
 
 namespace AppGas.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\CameraPage.xaml")]
-    public partial class CameraPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\GasksDetailPage.xaml")]
+    public partial class TasksDetailPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(CameraPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TasksDetailPage));
         }
     }
 }

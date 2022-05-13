@@ -10,7 +10,7 @@ using Xamarin.Forms;
 
 namespace AppGas.ViewModels
 {
-    public class TasksDetailViewModel : BaseViewModel
+    public class GasDetailViewModel : BaseViewModel
     {
         // Variables
 
@@ -31,8 +31,8 @@ namespace AppGas.ViewModels
         public Command SelectPictureCommand => _SelectPictureCommand ?? (_SelectPictureCommand = new Command(SelectPictureAction));
 
         // Propiedades
-        private TaskModel _TaskSelected;
-        public TaskModel TaskSelected
+        private GasModel _TaskSelected;
+        public GasModel TaskSelected
         {
             get => _TaskSelected;
             set => SetProperty(ref _TaskSelected, value);
@@ -46,13 +46,13 @@ namespace AppGas.ViewModels
         }
 
         // Constructores
-        public TasksDetailViewModel()
+        public GasDetailViewModel()
         {
             // Es nueva tarea, instanciamos
-            TaskSelected = new TaskModel();
+            TaskSelected = new GasModel();
         }
 
-        public TasksDetailViewModel(TaskModel taskSelected)
+        public GasDetailViewModel(GasModel taskSelected)
         {
             // Es tarea seleccionada (existente), cargamos
             TaskSelected = taskSelected;
@@ -66,7 +66,7 @@ namespace AppGas.ViewModels
             await App.TaskDatabase.SaveTaskAsync(TaskSelected);
 
             // Refrescamos el listado
-            TasksListViewModel.GetInstance().LoadTasks();
+            GasListViewModel.GetInstance().LoadTasks();
 
             // Cerramos la página
             CancelAction();
@@ -78,7 +78,7 @@ namespace AppGas.ViewModels
             await App.TaskDatabase.DeleteTaskAsync(TaskSelected);
 
             // Regrescamos el listado
-            TasksListViewModel.GetInstance().LoadTasks();
+            GasListViewModel.GetInstance().LoadTasks();
 
             // Cerramos la página
             CancelAction();

@@ -6,7 +6,7 @@ using System.Text;
 namespace AppGas.Models
 {
     [Table("Task")]
-    public class TaskModel
+    public class GasModel
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }

@@ -18,14 +18,14 @@ namespace AppGas.Views
         {
             InitializeComponent();
 
-            BindingContext = new TasksDetailViewModel();
+            BindingContext = new GasDetailViewModel();
         }
 
-        public TasksDetailPage(TaskModel taskSelected)
+        public TasksDetailPage(GasModel taskSelected)
         {
             InitializeComponent();
 
-            BindingContext = new TasksDetailViewModel(taskSelected);
+            BindingContext = new GasDetailViewModel(taskSelected);
         }
     }
 }

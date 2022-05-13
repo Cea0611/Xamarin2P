@@ -8,25 +8,25 @@ using Xamarin.Forms;
 
 namespace AppGas.ViewModels
 {
-    public class TasksListViewModel : BaseViewModel
+    public class GasListViewModel : BaseViewModel
     {
         // Variables
-        static TasksListViewModel instance;
+        static GasListViewModel instance;
 
         // Comandos
         private Command _NewCommand;
         public Command NewCommand => _NewCommand ?? (_NewCommand = new Command(NewAction));
 
         // Propiedades
-        private List<TaskModel> _Tasks;
-        public List<TaskModel> Tasks
+        private List<GasModel> _Tasks;
+        public List<GasModel> Tasks
         {
             get => _Tasks;
             set => SetProperty(ref _Tasks, value);
         }
 
-        private TaskModel _TaskSelected;
-        public TaskModel TaskSelected
+        private GasModel _TaskSelected;
+        public GasModel TaskSelected
         {
             get => _TaskSelected;
             set
@@ -39,7 +39,7 @@ namespace AppGas.ViewModels
         }
 
         // Constructores
-        public TasksListViewModel()
+        public GasListViewModel()
         {
             // Guardamos en memoria esta misma clase (this)
             instance = this;
@@ -49,7 +49,7 @@ namespace AppGas.ViewModels
         }
 
         // Metodos
-        public static TasksListViewModel GetInstance()
+        public static GasListViewModel GetInstance()
         {
             // Regresamos la instancia de esta misma clase(this)
             return instance;

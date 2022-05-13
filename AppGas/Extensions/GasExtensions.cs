@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace AppGas.Extensions
 {
-    public static class TaskExtensions
+    public static class GasExtensions
     {
         /// <param name="task"> es la tarea que se esta extendiendo </param>
         /// <param name="returnToCallingContext">booleano que se manda al metodo Configure await</param>

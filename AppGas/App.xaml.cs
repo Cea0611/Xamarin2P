@@ -9,12 +9,12 @@ namespace AppGas
     public partial class App : Application
     {
         // Propiedad estatica para instanciar y regresar la variable de SQLite
-        private static TaskDatabase tasksDatabase;
-        public static TaskDatabase TaskDatabase
+        private static GasDatabase tasksDatabase;
+        public static GasDatabase TaskDatabase
         {
             get
             {
-                if (tasksDatabase == null) tasksDatabase = new TaskDatabase();
+                if (tasksDatabase == null) tasksDatabase = new GasDatabase();
                 return tasksDatabase;
             }
         }

@@ -9,7 +9,7 @@ using AppGas.Models;
 
 namespace AppGas.Data
 {
-    public class TaskDatabase
+    public class GasDatabase
     {
         //Instanciamos y abrimos la conexion a SQLLite donde Lazy nos permite generar la condición sin que se bloquee nuestra app
         static readonly Lazy<SQLiteAsyncConnection> lazyInitializer = new Lazy<SQLiteAsyncConnection>(() =>
@@ -24,7 +24,7 @@ namespace AppGas.Data
         static bool isInitialized = false;
 
         // Constructor
-        public TaskDatabase()
+        public GasDatabase()
         {
             // Llamamos al metodo de inicializar con la extensi´on de llamado seguro
             InitializedAsync().SafeFireAndForget(false);
@@ -35,38 +35,38 @@ namespace AppGas.Data
         {
             if (!isInitialized)
             {
-                if (!Database.TableMappings.Any(m => m.MappedType.Name == typeof(TaskModel).Name))
+                if (!Database.TableMappings.Any(m => m.MappedType.Name == typeof(GasModel).Name))
                 {
-                    await Database.CreateTablesAsync(CreateFlags.None, typeof(TaskModel)).ConfigureAwait(false);
+                    await Database.CreateTablesAsync(CreateFlags.None, typeof(GasModel)).ConfigureAwait(false);
                     isInitialized = true;
                 }
             }
         }
 
         // Metodos CRUD para TaskModel
-        public Task<List<TaskModel>> GetAllTasksAsync()
+        public Task<List<GasModel>> GetAllTasksAsync()
         {
-            return Database.Table<TaskModel>().ToListAsync();
+            return Database.Table<GasModel>().ToListAsync();
         }
 
-        public Task<TaskModel> GetTaskAsync(int id)
+        public Task<GasModel> GetTaskAsync(int id)
         {
-            return Database.Table<TaskModel>().Where(i => i.ID == id).FirstOrDefaultAsync();
+            return Database.Table<GasModel>().Where(i => i.ID == id).FirstOrDefaultAsync();
         }
 
-        public Task<List<TaskModel>> GetTasksNotDoneAsync()
+        public Task<List<GasModel>> GetTasksNotDoneAsync()
         {
             // Recupera el nombre de la tarea que se realizo sin exito
-            return Database.QueryAsync<TaskModel>($"SELECT * FROM [{typeof(TaskModel).Name}] WHERE [Done] = 0");
+            return Database.QueryAsync<GasModel>($"SELECT * FROM [{typeof(GasModel).Name}] WHERE [Done] = 0");
         }
 
-        public Task<List<TaskModel>> GetTasksDoneAsync()
+        public Task<List<GasModel>> GetTasksDoneAsync()
         {
             // Recupera el nombre de la tarea que se realizo con exito
-            return Database.QueryAsync<TaskModel>($"SELECT * FROM [{typeof(TaskModel).Name}] WHERE [Done] = 1");
+            return Database.QueryAsync<GasModel>($"SELECT * FROM [{typeof(GasModel).Name}] WHERE [Done] = 1");
         }
 
-        public Task<int> SaveTaskAsync(TaskModel model)
+        public Task<int> SaveTaskAsync(GasModel model)
         {
             if (model.ID == 0)
             {
@@ -80,7 +80,7 @@ namespace AppGas.Data
             }
         }
 
-        public Task<int> DeleteTaskAsync(TaskModel model)
+        public Task<int> DeleteTaskAsync(GasModel model)
         {
             // Delete
             return Database.DeleteAsync(model);
