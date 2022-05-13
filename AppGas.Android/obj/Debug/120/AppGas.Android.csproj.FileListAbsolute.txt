@@ -63,8 +63,6 @@ C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas.Android\obj\Debu
 C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas.Android\obj\Debug\120\res\mipmap-xxxhdpi\icon.png
 C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas.Android\obj\Debug\120\res\mipmap-xxxhdpi\launcher_foreground.png
 C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas.Android\obj\Debug\120\res\xml\file_paths.xml
-C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas.Android\obj\Debug\120\res\drawable\plus.png
-C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas.Android\obj\Debug\120\res\drawable\check.png
 C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas.Android\obj\Debug\120\uploadflags.txt
 C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas.Android\obj\Debug\120\resolvedassemblies.hash
 C:\Users\Cesar\Documents\Uni\4to semestre\windows\AppGas\AppGas.Android\obj\Debug\120\android\assets\AppGas.Android.dll

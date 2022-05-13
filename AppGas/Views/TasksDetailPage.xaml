@@ -5,6 +5,7 @@
              x:Class="AppGas.Views.TasksDetailPage">
     <ContentPage.Resources>
         <ResourceDictionary>
+            <converters:ImageConverter x:Key="ImageConverter" />
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -59,7 +60,7 @@
                     Text="Seleccionar Foto"
                     Command="{Binding SelectPictureCommand}" />
                 <Image
-                    Source="{Binding ImageBase64}"
+                    Source="{Binding Picture, Converter={StaticResource ImageConverter}}"
                     WidthRequest="100" />
 
             </StackLayout>

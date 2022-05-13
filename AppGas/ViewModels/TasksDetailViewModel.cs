@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
+using AppGas.Services;
 
 namespace AppGas.ViewModels
 {
@@ -114,14 +115,7 @@ namespace AppGas.ViewModels
             if (file == null) return;
 
             //Asignamos la ruta de la fotografia en la propiedad de la imagen
-            Picture = file.Path;
-            //await DisplayAlert("File Location", file.Path, "OK");
-
-            /*image.Source = ImageSource.FromStream(() =>
-            {
-                var stream = file.GetStream();
-                return stream;
-            });*/
+            Picture = TaskSelected.ImageBase64 = await new ImageService().ConvertImageToBase64(file.Path);
         }
 
         private async void SelectPictureAction()
@@ -147,7 +141,7 @@ namespace AppGas.ViewModels
             if (file == null) return;
 
             //Asignamos la ruta de la fotografia en la propiedad de la imagen
-            Picture = file.Path;
+            Picture = TaskSelected.ImageBase64 = await new ImageService().ConvertImageToBase64(file.Path);
         }
     }
 }
