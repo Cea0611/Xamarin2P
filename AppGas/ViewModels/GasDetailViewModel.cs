@@ -5,13 +5,60 @@ using Plugin.Media;
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using Xamarin.Forms;
 
 namespace AppGas.ViewModels
 {
+    [QueryProperty(nameof(GasId), nameof(GasId))]
+
     public class GasDetailViewModel : BaseViewModel
     {
+        private string gasId;
+        private string text;
+        private string description;
+        public string Id { get; set; }
+
+        public string Text
+        {
+            get => text;
+            set => SetProperty(ref text, value);
+        }
+
+        public string Description
+        {
+            get => description;
+            set => SetProperty(ref description, value);
+        }
+
+        public string GasId
+        {
+            get
+            {
+                return gasId;
+            }
+            set
+            {
+                gasId = value;
+                LoadItemId(value);
+            }
+        }
+
+        public async void LoadItemId(string gasId)
+        {
+            try
+            {
+                var item = await DataStore.GetItemAsync(gasId);
+                Id = item.Id;
+                Text = item.Text;
+                Description = item.Description;
+            }
+            catch (Exception)
+            {
+                Debug.WriteLine("Failed to Load Item");
+            }
+        }
         // Variables
 
         // Comandos

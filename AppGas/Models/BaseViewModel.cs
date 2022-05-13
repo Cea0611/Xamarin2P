@@ -1,13 +1,18 @@
-﻿using System;
+﻿using AppMaps.Models;
+using AppMaps.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
+using Xamarin.Forms;
 
 namespace AppGas.Models
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
+        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        bool isBusy = false;
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected bool SetProperty<T>(ref T backingStore, T value, [CallerMemberName] string propertyName = "", Action onChanged = null)
@@ -31,6 +36,13 @@ namespace AppGas.Models
         {
             get => _IsBusy;
             set => SetProperty(ref _IsBusy, value);
+        }
+
+        string title = string.Empty;
+        public string Title
+        {
+            get { return title; }
+            set { SetProperty(ref title, value); }
         }
     }
 }
