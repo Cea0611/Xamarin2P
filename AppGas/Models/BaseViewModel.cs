@@ -12,7 +12,6 @@ namespace AppGas.Models
     public class BaseViewModel : INotifyPropertyChanged
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
-        bool isBusy = false;
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected bool SetProperty<T>(ref T backingStore, T value, [CallerMemberName] string propertyName = "", Action onChanged = null)

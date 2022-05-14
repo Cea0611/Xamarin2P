@@ -14,6 +14,8 @@
         <ToolbarItem Text="Guardar" Command="{Binding SaveCommand}" />
         <ToolbarItem Text="Eliminar" Command="{Binding DeleteCommand}" />
         <ToolbarItem Text="Cancelar" Command="{Binding CancelCommand}" />
+        <ToolbarItem Text="Mapa" Command="{Binding MapsPage}"/>
+
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
