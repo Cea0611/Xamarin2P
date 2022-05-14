@@ -22,7 +22,9 @@
   <application android:label="AppGas.Android" android:theme="@style/MainTheme" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true" android:extractNativeLibs="true">
     <provider android:name="androidx.core.content.FileProvider" android:authorities="com.companyname.appgas.fileprovider" android:exported="false" android:grantUriPermissions="true">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
+      <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCHHOuxbTWlwPY2Oh9VD5AkoP14YH35YT0"></meta-data>
     </provider>
+    <uses-library android:name="org.apache.http.legacy" android:required="false" />
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="AppGas" android:theme="@style/MainTheme" android:name="crc64b5bbdf37ba8707d5.MainActivity" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

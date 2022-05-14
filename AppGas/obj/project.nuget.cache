@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LJR8HlC7hrB4GR7wN0H4nFNlJU7fdOoe8CaF/K41yKyJNYcCOWJ7Kn9idoo0i0FQIUhlJDlKaeHuXv6E0V6DNw==",
+  "dgSpecHash": "dHULDS2Jh3hfdebo3Q9UzDHOjh++b5N5w7+4/FZ4KvjteIWP110EcjLPzLXxJZ7nOXb0ubrJ2/ZQrlAYXMj24w==",
   "success": true,
   "projectFilePath": "D:\\Aplicaciones_Moviles\\Xamarin2P\\AppGas\\AppGas.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,8 @@
     "C:\\Users\\ferna\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\xam.plugin.media\\5.1.1-beta\\xam.plugin.media.5.1.1-beta.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
-    "C:\\Users\\ferna\\.nuget\\packages\\xamarin.forms\\5.0.0.2401\\xamarin.forms.5.0.0.2401.nupkg.sha512"
+    "C:\\Users\\ferna\\.nuget\\packages\\xamarin.forms\\5.0.0.2401\\xamarin.forms.5.0.0.2401.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\xamarin.forms.maps\\5.0.0.2401\\xamarin.forms.maps.5.0.0.2401.nupkg.sha512"
   ],
   "logs": []
 }

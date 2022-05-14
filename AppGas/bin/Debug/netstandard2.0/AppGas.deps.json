@@ -13,6 +13,7 @@
           "Xam.Plugin.Media": "5.1.1-beta",
           "Xamarin.Essentials": "1.7.3",
           "Xamarin.Forms": "5.0.0.2401",
+          "Xamarin.Forms.Maps": "5.0.0.2401",
           "sqlite-net-pcl": "1.8.116"
         },
         "runtime": {
@@ -146,6 +147,17 @@
             "fileVersion": "5.0.0.905"
           }
         }
+      },
+      "Xamarin.Forms.Maps/5.0.0.2401": {
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2401"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "5.0.0.905"
+          }
+        }
       }
     }
   },
@@ -252,6 +264,13 @@
       "sha512": "sha512-fk/V8QWjeyo8UXcsqsNRMd6o1H5PBfyXYm97nxvhMsJIdeqDgfRWyIsSurM8uLGLQGdQP23R+hHj7vcTSo2UjQ==",
       "path": "xamarin.forms/5.0.0.2401",
       "hashPath": "xamarin.forms.5.0.0.2401.nupkg.sha512"
+    },
+    "Xamarin.Forms.Maps/5.0.0.2401": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mUrT0HmB7mZpjsjfUD9dpsdM9QnbECCxzYxaFWNMrtHDT8YtGQA55TJvoAziyRbFrzcv5a+7SovkH3r6brC1zQ==",
+      "path": "xamarin.forms.maps/5.0.0.2401",
+      "hashPath": "xamarin.forms.maps.5.0.0.2401.nupkg.sha512"
     }
   }
 }

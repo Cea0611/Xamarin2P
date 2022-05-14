@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:converters="clr-namespace:AppGas.Converters"
-             x:Class="AppGas.Views.TasksDetailPage">
+             x:Class="AppGas.Views.GasDetailPage">
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:ImageConverter x:Key="ImageConverter" />

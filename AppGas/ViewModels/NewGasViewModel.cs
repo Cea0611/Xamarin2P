@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 using AppGas.Models;
-using AppMaps.Models;
 
 using Xamarin.Forms;
 

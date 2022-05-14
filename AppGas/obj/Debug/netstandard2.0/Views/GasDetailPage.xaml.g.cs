@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppGas.Views.GasDetailPage.xaml", "Views/GasDetailPage.xaml", typeof(global::AppGas.Views.TasksDetailPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppGas.Views.GasDetailPage.xaml", "Views/GasDetailPage.xaml", typeof(global::AppGas.Views.GasDetailPage))]
 
 namespace AppGas.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\GasDetailPage.xaml")]
-    public partial class TasksDetailPage : global::Xamarin.Forms.ContentPage {
+    public partial class GasDetailPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TasksDetailPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(GasDetailPage));
         }
     }
 }

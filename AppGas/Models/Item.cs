@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AppMaps.Models
+namespace AppGas.Models
 {
     public class Item
     {

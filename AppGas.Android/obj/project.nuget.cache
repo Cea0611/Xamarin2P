@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Qs6KiGYdzvfZvrsdr3NRclgckKbbmOQaieqZBs3MEs/A8kbyiXoDvR55oJzDmyy/uQu7JhOsoGTkMUw1E4EcBQ==",
+  "dgSpecHash": "OpLs4OTXikJ2ap5tKxOQKgLE7oj+pexBg8S6DfHTC0j9vsHVKKGpUInIFwHdD+413MOQKkskWrr+qVxJy1xmDQ==",
   "success": true,
   "projectFilePath": "D:\\Aplicaciones_Moviles\\Xamarin2P\\AppGas.Android\\AppGas.Android.csproj",
   "expectedPackageFiles": [
@@ -67,10 +67,16 @@
     "C:\\Users\\ferna\\.nuget\\packages\\xamarin.androidx.versionedparcelable\\1.1.1.8\\xamarin.androidx.versionedparcelable.1.1.1.8.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\xamarin.androidx.viewpager\\1.0.0.8\\xamarin.androidx.viewpager.1.0.0.8.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\xamarin.androidx.viewpager2\\1.0.0.10\\xamarin.androidx.viewpager2.1.0.0.10.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\xamarin.build.download\\0.10.0\\xamarin.build.download.0.10.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\xamarin.forms\\5.0.0.2401\\xamarin.forms.5.0.0.2401.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\xamarin.forms.maps\\5.0.0.2401\\xamarin.forms.maps.5.0.0.2401.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
-    "C:\\Users\\ferna\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
+    "C:\\Users\\ferna\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\xamarin.googleplayservices.base\\117.1.0\\xamarin.googleplayservices.base.117.1.0.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\xamarin.googleplayservices.basement\\117.1.0\\xamarin.googleplayservices.basement.117.1.0.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\xamarin.googleplayservices.maps\\117.0.0\\xamarin.googleplayservices.maps.117.0.0.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\xamarin.googleplayservices.tasks\\117.0.0\\xamarin.googleplayservices.tasks.117.0.0.nupkg.sha512"
   ],
   "logs": []
 }

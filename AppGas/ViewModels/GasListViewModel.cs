@@ -62,13 +62,13 @@ namespace AppGas.ViewModels
         private void NewAction()
         {
             // Abrimos la pagina de detalle en modalidad de crear una tarea
-            Application.Current.MainPage.Navigation.PushAsync(new TasksDetailPage());
+            Application.Current.MainPage.Navigation.PushAsync(new GasDetailPage());
         }
 
         private void SelectTaskAcction()
         {
             // Abrimos la pagina de detalle en modalidad de abrir una tarea existente
-            Application.Current.MainPage.Navigation.PushAsync(new TasksDetailPage(TaskSelected));
+            Application.Current.MainPage.Navigation.PushAsync(new GasDetailPage(TaskSelected));
         }
     }
 }

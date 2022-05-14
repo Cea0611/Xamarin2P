@@ -22,8 +22,6 @@ D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\AppGas.csproj.
 D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\AppGas.GeneratedMSBuildEditorConfig.editorconfig
 D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\Views\CameraPage.xaml.g.cs
-D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\Views\TaskListPage.xaml.g.cs
-D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\Views\TasksDetailPage.xaml.g.cs
 D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\AppGas.AssemblyInfoInputs.cache
 D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\AppGas.AssemblyInfo.cs
 D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\AppGas.csproj.CoreCompileInputs.cache
@@ -32,3 +30,10 @@ D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\AppGas.dll
 D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\refint\AppGas.dll
 D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\AppGas.pdb
 D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\ref\AppGas.dll
+D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\Views\GasDetailPage.xaml.g.cs
+D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\Views\GasListPage.xaml.g.cs
+D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\Views\GasPage.xaml.g.cs
+D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\Views\MapsPage.xaml.g.cs
+D:\Aplicaciones_Moviles\Xamarin2P\AppGas\obj\Debug\netstandard2.0\Views\NewGasPage.xaml.g.cs

@@ -12,16 +12,16 @@ using Xamarin.Forms.Xaml;
 namespace AppGas.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TasksDetailPage : ContentPage
+    public partial class GasDetailPage : ContentPage
     {
-        public TasksDetailPage()
+        public GasDetailPage()
         {
             InitializeComponent();
 
             BindingContext = new GasDetailViewModel();
         }
 
-        public TasksDetailPage(GasModel taskSelected)
+        public GasDetailPage(GasModel taskSelected)
         {
             InitializeComponent();
 

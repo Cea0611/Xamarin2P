@@ -14,6 +14,10 @@
 				android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths">
 			</meta-data>
+			<meta-data
+				android:name="com.google.android.geo.API_KEY"
+			    android:value="AIzaSyCHHOuxbTWlwPY2Oh9VD5AkoP14YH35YT0">
+			</meta-data>
 		</provider>
 	</application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

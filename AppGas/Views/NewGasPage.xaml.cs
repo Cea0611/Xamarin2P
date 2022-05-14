@@ -1,4 +1,5 @@
-﻿using AppMaps.ViewModels;
+﻿using AppGas.Models;
+using AppMaps.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,10 @@ using Xamarin.Forms.Xaml;
 namespace AppGas.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class NewItemPage : ContentPage
+    public partial class NewGasPage : ContentPage
     {
-        public NewItemPage()
+        public Item Gas { get; set; }
+        public NewGasPage()
         {
             InitializeComponent();
             BindingContext = new NewGasViewModel();

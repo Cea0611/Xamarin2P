@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using AppGas.Models;
-using AppMaps.Views;
+using AppGas.Views;
 
 using Xamarin.Forms;
 

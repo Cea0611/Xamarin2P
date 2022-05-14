@@ -24,10 +24,13 @@
       <action android:name="android.media.browse.MediaBrowserService" />
     </intent>
   </queries>
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
   <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/icon" android:label="AppGas.Android" android:theme="@style/MainTheme">
     <provider android:name="androidx.core.content.FileProvider" android:authorities="com.companyname.appgas.fileprovider" android:exported="false" android:grantUriPermissions="true">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+      <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCHHOuxbTWlwPY2Oh9VD5AkoP14YH35YT0" />
     </provider>
+    <uses-library android:name="org.apache.http.legacy" android:required="false" />
     <activity android:name="crc64b5bbdf37ba8707d5.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:icon="@mipmap/icon" android:label="AppGas" android:theme="@style/MainTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -46,5 +49,7 @@
     <activity android:name="crc64a0e0a82d0db9a07d.WebAuthenticatorIntermediateActivity" android:configChanges="orientation|screenSize" />
     <receiver android:name="crc643f46942d9dd1fff9.PowerSaveModeBroadcastReceiver" android:enabled="true" android:exported="false" />
     <provider android:name="mono.MonoRuntimeProvider" android:authorities="com.companyname.appgas.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="1999999999" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
   </application>
 </manifest>

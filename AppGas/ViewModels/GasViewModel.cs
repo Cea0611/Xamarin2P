@@ -4,12 +4,10 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using AppGas.Models;
 using AppGas.ViewModels;
-using AppMaps.Models;
-using AppMaps.Views;
-
+using AppGas.Views;
 using Xamarin.Forms;
 
-namespace AppMaps.ViewModels
+namespace AppGas.ViewModels
 {
     public class GasViewModel : BaseViewModel
     {
@@ -72,7 +70,7 @@ namespace AppMaps.ViewModels
 
         private async void OnAddItem(object obj)
         {
-            await Shell.Current.GoToAsync(nameof(NewItemPage));
+            await Shell.Current.GoToAsync(nameof(NewGasPage));
         }
 
         async void OnItemSelected(Item item)
@@ -81,7 +79,7 @@ namespace AppMaps.ViewModels
                 return;
 
             // This will push the ItemDetailPage onto the navigation stack
-            await Shell.Current.GoToAsync($"{nameof(Gas)}?{nameof(GasDetailViewModel.GasId)}={item.Id}");
+            await Shell.Current.GoToAsync($"{nameof(GasDetailPage)}?{nameof(GasDetailViewModel.GasId)}={item.Id}");
         }
     }
 }
