@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGas.Views.GasPage"
              Title="{Binding Title}"
-             xmlns:local="clr-namespace:AppGas.ViewModels" xmlns:model="clr-namespace:AppGas.Models"
+             xmlns:local="clr-namespace:AppGas.ViewModels" 
+             xmlns:model="clr-namespace:AppGas.Models" 
+             x:DataType="local:GasViewModel"
              x:Name="BrowseItemsPage">
 
     <ContentPage.ToolbarItems>

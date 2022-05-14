@@ -4,7 +4,8 @@
              x:Class="AppGas.Views.NewItemPage"
              Shell.PresentationMode="ModalAnimated"
              Title="New Item"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             xmlns:viewmodels="clr-namespace:AppMaps.ViewModels" x:DataType="viewmodels:NewGasViewModel"
              ios:Page.UseSafeArea="true">
     <ContentPage.Content>
         <StackLayout>
